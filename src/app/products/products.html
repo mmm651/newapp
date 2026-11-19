@@ -1,0 +1,8 @@
+<button (click)="addPtoduct()">Add Product</button>
+
+
+@for(product of productList; track product){
+  <app-product-details [myProduct]="product" (likeEvent)="getLike($event)" ,(deleteEvent)="loadData()"></app-product-details>
+
+}
+

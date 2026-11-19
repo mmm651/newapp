@@ -1,0 +1,5 @@
+<p>productsapi works!</p>
+@for(product of productsList ;track product.id){
+<app-products-details-api
+[myProduct]="product"/>
+}
